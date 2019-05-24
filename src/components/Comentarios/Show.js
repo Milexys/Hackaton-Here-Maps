@@ -41,19 +41,18 @@ class Show extends Component {
       <div className="container">
         <div className="panel panel-default">
           <div className="panel-heading">
-          <h4><Link to="/dashboard">Board List</Link></h4>
+          <h4><Link to="/dashboard">Reporte</Link></h4>
             <h3 className="panel-title">
               {this.state.board.title}
             </h3>
           </div>
           <div className="panel-body">
             <dl>
-              <dt>Description:</dt>
+              <dt>Descripción:</dt>
               <dd>{this.state.board.description}</dd>
-              <dt>Author:</dt>
+              <dt>Usuario:</dt>
               <dd>{this.state.board.author}</dd>
             </dl>
-            <Link to={`/dashboard/edit/${this.state.key}`} className="btn btn-success">Edit</Link>&nbsp;
             <button onClick={this.delete.bind(this, this.state.key)} className="btn btn-danger">Delete</button>
           </div>
         </div>
