@@ -69,25 +69,25 @@ class Create extends Component {
           <Col xs={12} md={12} lg={12} >
             <form onSubmit={this.onSubmit}>
               <div className="form-group">
-                 <label for="title">Foto</label>  
-                 <input className="form-control" type="file" value={url} onChange={this.handleChange}/>
+                 <label htmlFor="title">Foto</label>  
+                 <input className="form-control" type="file" onChange={this.handleChange}/>
                  
               </div>
               <div className="form-group">
-                <label for="title">Titulo</label>
-                <input type="text" className="form-control" name="title" value={title} onChange={this.onChange} placeholder="Titulo" />
+                <label htmlFor="title">Titulo</label>
+                <input type="text" className="form-control" name="title"  onChange={this.onChange} placeholder="Titulo" />
               </div>
               <div className="form-group">
-                <label for="description">Descripción</label>
-                <textArea className="form-control" name="description" onChange={this.onChange} placeholder="Descripción" cols="80" rows="3">{description}</textArea>
+                <label htmlFor="description">Descripción del Reporte</label>
+                <textarea className="form-control" name="description" onChange={this.onChange} placeholder="Descripción" cols="80" rows="3"></textarea>
               </div>
               <div className="form-group">
-                <label for="author">Vecin@:</label>
-                <input type="text" className="form-control" name="author" value={author} onChange={this.onChange} placeholder="Nombre" />
+                <label htmlFor="author">Vecin@:</label>
+                <input type="text" className="form-control" name="author" onChange={this.onChange} placeholder="Nombre" />
               </div>
 
               <div className="form-group">
-                <label for="author">Ubicación</label>
+                <label htmlFor="author">Ubicación</label>
                 <input type="text" className="form-control" name="author" placeholder="ubicacion" />
               </div>
              <div className="btn-sucess">
